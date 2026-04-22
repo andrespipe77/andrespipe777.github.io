@@ -147,7 +147,7 @@ function eliminarReserva(id) {
 }
 
 function enviarWhatsApp(reserva) {
-    const mensaje = `Hola, acabo de agendar una cita en The Blade Society:%0A%0A` +
+    const mensaje = `Hola, acabo de agendar una cita en Barbershop paul:%0A%0A` +
         `*Nombre:* ${reserva.nombre}%0A` +
         `*Servicio:* ${reserva.servicioTexto}%0A` +
         `*Barbero:* ${reserva.barberoTexto}%0A` +
