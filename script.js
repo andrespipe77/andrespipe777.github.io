@@ -157,7 +157,7 @@ function enviarWhatsApp(reserva) {
         (reserva.notas ? `*Notas:* ${reserva.notas}` : '');
     
     // Abre WhatsApp con el mensaje (cambia el número por el real)
-    window.open(`https://wa.me/525512345678?text=${mensaje}`, '_blank');
+    window.open(`https://wa.me/3137748902?text=${mensaje}`, '_blank');
 }
 
 function formatearFecha(fechaStr) {
