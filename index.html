@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop paul</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="blade-icon">✦</div>
+            <p>Barbershop paul</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">Bienvenidos</div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#barberos">Barberos</a></li>
+            <li><a href="#reservas">Reservar</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">Barberia de lujo</p>
+            <h1>Donde el arte<br>encuentra tu estilo</h1>
+            <p class="description">Cortes de precisión y una experiencia premium que redefine tu imagen.</p>
+            <div class="hero-buttons">
+                <a href="#reservas" class="btn-primary">Reservar Cita</a>
+                <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="stats">
+        <div class="stat-item" data-aos="fade-up">
+            <h3>1,000+</h3>
+            <p>Cortes realizados</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-delay="100">
+            <h3>5</h3>
+            <p>Años de experiencia</p>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-delay="200">
+            <h3>4.9</h3>
+            <p>Rating promedio</p>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios" id="servicios">
+        <div class="section-header">
+            <p class="section-tag">Nuestros Servicios</p>
+            <h2>Experiencia de lujo</h2>
+        </div>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Corte Basico</h3>
+                    <p>Mantenimiento de tu look. Corte con maquina y tijera, definicion de patillas y nuca. Sal fresco y bien presentado.</p>
+                    <div class="servicio-footer">
+                        <span class="precio">$20.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 40 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Corte mas Barba</h3>
+                    <p>Renovacion total. Corte personalizado + perfilado de barba con navaja. El estilo completo en un solo servicio.</p>
+                    <div class="servicio-footer">
+                        <span class="precio">$25.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 60 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Barba</h3>
+                    <p>Perfilado, definicion de contornos y acabado con productos premium. Sal de aqui con la barba que impone respeto.</p>
+                    <div class="servicio-footer">
+                        <span class="precio">$8.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 20 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Cejas</h3>
+                    <p>El toque que hace la diferencia.Perfilamos tus cejas para darle fuerza a tu expresion, Un corte sin cejas arregladas, no esta completo.</p>
+                    <div class="servicio-footer">
+                        <span class="precio">$4.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 5 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Corte Premium</h3>
+                    <p>Diseño personalizado + lavado + acabado con productos top. Maxima precision, cero afanes. El corte que te hace ver como te mereces.</p>
+                    <div class="servicio-footer">
+                        <span class="precio">$60.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 80 min</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="servicio-card">
+                <div class="servicio-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="servicio-info">
+                    <h3>Barba Premium</h3>
+                    <p>Diseño + toallas calientes + navaja + aceites y balsamos top. El cuidado que tu barba merece. </p> <div class="servicio-footer">
+                        <span class="precio">$50.000</span>
+                        <span class="tiempo"><i class="far fa-clock"></i> 40 min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barberos -->
+    <section class="barberos" id="barberos">
+        <div class="section-header light">
+            <p class="section-tag">El Equipo</p>
+            <h2>Nuestro Barberos</h2>
+        </div>
+        <div class="barberos-grid">
+            <div class="barbero-card">
+                <div class="barbero-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="barbero-info">
+                    <h3>Adan Dueñas"</h3>
+                    <p class="especialidad">Especialista en barberia</p>
+                    <p class="bio">4 años en experiencia, El mejor de la region.</p>
+                    <div class="barbero-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barbero-card">
+                <div class="barbero-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="barbero-info">
+                    <h3>Manuel David Soto</h3>
+                    <p class="especialidad">Experto en cualqueier estilo de corte y barba.</p>
+                    <p class="bio">Experiencia en todos los tipos de cabello y barba.</p>
+                    <div class="barbero-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="barbero-card">
+                <div class="barbero-img">
+                    <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                </div>
+                <div class="barbero-info">
+                    <h3>Diego Matallana</h3>
+                    <p class="especialidad">Estilos clásicos</p>
+                    <p class="bio">.</p>
+                    <div class="barbero-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria">
+        <div class="section-header">
+            <p class="section-tag">Galería</p>
+            <h2>Trabajos recientes</h2>
+        </div>
+        <div class="galeria-grid">
+            <div class="galeria-item tall">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                <div class="galeria-overlay">
+                    <i class="fas fa-cut"></i>
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo"">
+                <div class="galeria-overlay">
+                    <i class="fas fa-cut"></i>
+                </div>
+            </div>
+            <div class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                <div class="galeria-overlay">
+                    <i class="fas fa-cut"></i>
+                </div>
+            </div>
+            <div class="galeria-item wide">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&h=400&fit=crop" alt="Combo">
+                <div class="galeria-overlay">
+                    <i class="fas fa-cut"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservas -->
+    <section class="reservas" id="reservas">
+        <div class="reservas-container">
+            <div class="reservas-info">
+                <p class="section-tag">Reservaciones</p>
+                <h2>Agenda tu cita</h2>
+                <p class="reservas-desc">Selecciona tu servicio, barbero preferido y horario. Te enviaremos confirmación por WhatsApp.</p>
+                
+                <div class="info-contacto">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación</h4>
+                            <p>Charala-Santander </p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horario</h4>
+                            <p>Lun - Sáb: 8:00AM - 8:00PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+57.....</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="reservas-form" id="reservaForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" required placeholder="Tu nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" required placeholder="313....">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="servicio">Servicio</label>
+                        <select id="servicio" required>
+                            <option value="">Selecciona...</option>
+                            <option value="corte">Corte Basico — $20.000</option>
+                            <option value="combo">Corte mas barba — $25.000</option>
+                            <option value="barba">Barba — $8.000</option>
+                            <option value="corte">Cejas — $4.000</option>
+                            <option value="combo">Corte Premium — $60.000</option>
+                            <option value="combo">Barba Premium — $50.000</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="barbero">Barbero</label>
+                        <select id="barbero" required>
+                            <option value="">Selecciona...</option>
+                            <option value="adan">Adan Dueñas</option>
+                            <option value="manuel">Manuel David Soto</option>
+                            <option value="diego">Diego Matallana</option>
+                            <option value="cualquiera">Cualquiera disponible</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <select id="hora" required>
+                            <option value="">Selecciona...</option>
+                            <option value="8:00">8:00 AM</option>
+                            <option value="9:00">9:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="13:00">1:00 PM</option>
+                            <option value="14:00">2:00 PM</option>
+                            <option value="15:00">3:00 PM</option>
+                            <option value="16:00">4:00 PM</option>
+                            <option value="17:00">5:00 PM</option>
+                            <option value="18:00">6:00 PM</option>
+                            <option value="19:00">7:00 PM</option>
+                            <option value="20:00">8:00 PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notas">Notas adicionales</label>
+                    <textarea id="notas" rows="3" placeholder="¿Algo especial que debamos saber?"></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <span>Confirmar Reserva</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Mis Reservas -->
+    <section class="mis-reservas" id="misReservas" style="display: none;">
+        <div class="section-header">
+            <p class="section-tag">Panel</p>
+            <h2>Tus Reservas</h2>
+        </div>
+        <div class="reservas-list" id="reservasList"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contacto">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>Barberiashop Paul</h3>
+                <p>Barbería premium dedicada al arte del cuidado masculino. Cada corte es una experiencia.</p>
+                <div class="footer-social">
+                    <a href="https://wa.me/525512345678" target="_blank" class="social-btn whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://instagram.com/thebladesociety" target="_blank" class="social-btn instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-btn facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#barberos">Barberos</a></li>
+                    <li><a href="#reservas">Reservar</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-horario">
+                <h4>Horario</h4>
+                <ul>
+                    <li><span>Lunes - Viernes</span> <span>8:00 - 20:00</span></li>
+                    <li><span>Sábado</span> <span>8:00 - 20:00</span></li>
+                    <li><span>Domingo</span> <span>Cerrado</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Confirmación -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-icon">✓</div>
+            <h3>¡Reserva Confirmada!</h3>
+            <p id="modalText">Tu cita ha sido agendada exitosamente.</p>
+            <button class="btn-close" onclick="cerrarModal()">Aceptar</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/3137748902" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
